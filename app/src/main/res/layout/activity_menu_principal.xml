@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MENU PRINCIPAL"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#2196F3"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btnAjouterSupprimerRoute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajouter/Supprimer une route"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnAffecterRoute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Affecter Route"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnAjouterAbonnement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajouter un abonnement"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnRetirerAbonnement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Retirer un abonnement"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnAjouterLivreur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajouter un livreur"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnLister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lister"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnQuitter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quitter"
+        android:backgroundTint="#F44336" />
+
+</LinearLayout>

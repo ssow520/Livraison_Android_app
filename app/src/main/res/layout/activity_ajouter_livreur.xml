@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#FFF3E0">
+
+        <Button
+            android:id="@+id/btnEnregistrerLivreur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enregistrer"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnRetourMenuLivreur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu Principal"
+            android:backgroundTint="#607D8B" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AJOUTER UN LIVREUR"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/edtNom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:hint="Nom du livreur"
+                android:layout_marginBottom="12dp" />
+
+            <EditText
+                android:id="@+id/edtAdresse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:hint="Adresse"
+                android:layout_marginBottom="12dp" />
+
+            <EditText
+                android:id="@+id/edtTelephone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:hint="Téléphone"
+                android:inputType="phone" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#E8F5E9">
+
+        <Button
+            android:id="@+id/btnEnregistrer"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Enregistrer"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnRetourMenu"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Menu Principal" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AJOUTER UN ABONNEMENT"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/edtNomClient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:hint="Nom du client"
+                android:layout_marginBottom="12dp" />
+
+            <EditText
+                android:id="@+id/edtAdresse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:hint="Adresse"
+                android:layout_marginBottom="12dp" />
+
+            <EditText
+                android:id="@+id/edtQuantiteMagazines"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:hint="Quantité de magazines"
+                android:inputType="number"
+                android:layout_marginBottom="12dp" />
+
+            <EditText
+                android:id="@+id/edtQuantiteJournaux"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:hint="Quantité de journaux"
+                android:inputType="number"
+                android:layout_marginBottom="24dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Route suggérée"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp" />
+
+                <EditText
+                    android:id="@+id/edtNumeroRoute"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:hint="Numéro de route"
+                    android:inputType="number"
+                    android:gravity="center" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
